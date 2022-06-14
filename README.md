@@ -23,5 +23,12 @@ Add to bottom
 ::1       traefik api.muzzapi.local dashboard.muzzapi.local wali.muzz.local messenger.muzzapi.local
 ```
 
-#### Update .env files
+### Update .env files
 Any references to http://localhost:{port} can be changed to https://<service>.muzzapi.local
+
+### Postman
+To allow for self-signed SSL certificates to be used, the rootCA.pem file needs to be added in Preferences > Certificates > CA Certificates.
+<br/>To find the location of rootCA.pem, run in a terminal
+```shell
+$ mkcert -CAROOT
+```
