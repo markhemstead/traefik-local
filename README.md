@@ -22,3 +22,6 @@ Add to bottom
 127.0.0.1 traefik api.muzzapi.local dashboard.muzzapi.local wali.muzz.local messenger.muzzapi.local
 ::1       traefik api.muzzapi.local dashboard.muzzapi.local wali.muzz.local messenger.muzzapi.local
 ```
+
+#### Update .env files
+Any references to http://localhost:{port} can be changed to https://<service>.muzzapi.local
